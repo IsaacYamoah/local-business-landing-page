@@ -226,3 +226,46 @@ footer p + p {
     color: #bbb;
     font-size: 0.9rem;
 }
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 4px 0;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+
+    h2 {
+        margin-bottom: 28px;
+        font-size: 1.7rem;
+    }
+
+    .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 24px 20px;
+    }
+}

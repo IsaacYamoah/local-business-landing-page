@@ -2,6 +2,21 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.querySelector(".contact-form");
+    const navigationLinks = document.querySelectorAll(".nav-links a");
+
+    navigationLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            const targetId = link.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+
+            if (!targetSection) {
+                return;
+            }
+
+            event.preventDefault();
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        });
+    });
 
     if (contactForm) {
         contactForm.addEventListener("submit", function (event) {
