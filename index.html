@@ -9,16 +9,35 @@
 <body>
 
     <!-- Navigation Menu -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Central Roofing - Ghana</div>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo-wrap">
+                <img class="logo-image" src="images/central-roofing-logo.png" alt="Central Roofing Ghana logo">
+                <div class="logo-text">CENTRAL ROOFING - GHANA</div>
+            </div>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#portfolio">Recent Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#">Takoradi Branch</a></li>
+                <li><a href="#">Ofaakor Branch</a></li>
             </ul>
+
+            <button class="search-btn" type="button" aria-label="Search site">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="5.5"></circle>
+                    <path d="M16 16L21 21"></path>
+                </svg>
+            </button>
         </nav>
     </header>
 
@@ -29,27 +48,94 @@
                 <source src="videos/hero-bg.mp4" type="video/mp4">
             </video>
             <div class="hero-content">
-                <h1>Protecting Your Property From Top to Bottom</h1>
-                <p>Ghana's trusted experts in residential roof installation, commercial waterproofing, and emergency repairs.</p>
+                <h1>WELCOME TO CENTRAL ROOFING</h1>
+                <p class="hero-tagline">Roofing Experts | Aluminium &amp; Aluzinc Sheets | Stone Coated Tiles | Roofing Accessories | Construction Partner | Supply &amp; Installation | Quality &amp; Durability | Custom Roofing Solutions | Nationwide Delivery | Trusted Since 2000</p>
+                <p class="hero-subtext">Premium roofing solutions built on quality, trust, and innovation—Whether it’s residential, commercial, or industrial projects</p>
+                <p class="hero-description">At Central Roofing, we deliver premium roofing solutions built on quality, trust, and innovation. From durable aluminium and aluzinc coils to expertly crafted roofing sheets, we provide materials that last and workmanship you can count on.</p>
+                <p class="hero-description">Whether it’s residential, commercial, or industrial projects, our mission is to protect what matters most – your home, your business, your future.</p>
                 <a href="#contact" class="btn">Get a Free Quote</a>
             </div>
         </section>
 
-        <!-- 2. Our Services Section -->
+        <!-- 2. About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <div class="about-copy">
+                    <p class="section-kicker">About Central Roofing</p>
+                    <h2>Central Roofing - Your One-Stop Roofing Hub!</h2>
+                    <p>Central Roofing, based in the heart of Breku-Akoti, Central Region, Ghana, is a leading provider of high-quality roofing solutions. We specialize in the manufacturing and installation of durable roofing sheets designed to withstand diverse weather conditions.</p>
+                    <p>Our commitment to excellence, coupled with our local understanding, allows us to create roofing systems that not only protect but also enhance the beauty of your structures. Central Roofing is your one-stop roofing hub.</p>
+                </div>
+
+                <ul class="about-highlights">
+                    <li class="about-highlight animated-highlight"><strong data-count="1500" data-suffix="k+">0</strong><span>Partners have worked with us</span></li>
+                    <li class="about-highlight animated-highlight"><strong data-count="10" data-suffix="+">0</strong><span>Years of experience</span></li>
+                    <li><strong>Professional team</strong><span>Experienced human resources</span></li>
+                    <li><strong>Quality service</strong><span>The best roof services for every project</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3. Our Services Section -->
         <section id="services" class="services-section">
-            <h2>Our Services</h2>
+            <div class="services-intro">
+                <p class="section-kicker">Our Services</p>
+                <h2>Central Roofing - Your One-Stop Roofing Hub!</h2>
+                <p>Central Roofing is your trusted partner for top-quality roofing solutions at unbeatable prices. We specialize in manufacturing and expertly installing a wide range of roofing materials, including durable aluminum roofing sheets, elegant coated tiles, reliable Aluzinc roofing sheets, efficient PVC rain gutters, and stylish shingles.</p>
+                <p>With our commitment to excellence, you can be confident in the longevity and beauty of your roof. Contact us today for exceptional roofing services that stand the test of time.</p>
+            </div>
+
             <div class="services-grid">
-                <div class="service-card">
-                    <h3>Residential Installation</h3>
-                    <p>Durable framing and expert tile/sheet installation designed to withstand local weather conditions.</p>
+                <article class="service-card">
+                    <img src="services%20images/Production%20of%20roofing%20sheets.jpg" alt="Roofing sheets being produced in a factory">
+                    <div class="service-card-body"><h3>Production of Roofing Sheets</h3><p>Roofing sheets are commonly made from aluminium and Aluzinc metals. We run these materials through specialized machines to form durable wave-like profiles, with each sheet type shaped to its own precise and beautiful finish.</p></div>
+                </article>
+                <article class="service-card">
+                    <img src="services%20images/Installation%20of%20roofing%20sheets.jpg" alt="Professional roofing sheet installation">
+                    <div class="service-card-body"><h3>Installation of Roofing Sheets</h3><p>Our installation team measures and cuts sheets accurately, secures them from the bottom upward, and overlaps each sheet correctly to help prevent leaks. Every installation is completed with care and precision.</p></div>
+                </article>
+                <article class="service-card">
+                    <img src="services%20images/Free%20estimation.jpg" alt="Roofing professional preparing a free project estimate">
+                    <div class="service-card-body"><h3>Free Estimation</h3><p>We assess the project scope, including roof size, labour, materials, and other expenses, then provide a clear cost estimate so you know what to expect before committing.</p></div>
+                </article>
+                <article class="service-card">
+                    <img src="services%20images/Sales%20of%20roofing%20sheets.jpg" alt="Roofing sheets prepared for sale">
+                    <div class="service-card-body"><h3>Sales of Roofing Sheets</h3><p>We help customers choose the right roofing sheets for their projects, considering material, size, application, price, installation guidance, and after-sales support.</p></div>
+                </article>
+                <article class="service-card">
+                    <img src="services%20images/Repairs%20and%20re-roofing%20of%20roofing%20sheets.jpg" alt="Roof repair and re-roofing work in progress">
+                    <div class="service-card-body"><h3>Repairs &amp; Re-roofing</h3><p>We repair leaks, rust, and loose sheets, and can replace ageing or extensively damaged roofs with new materials installed safely and professionally.</p></div>
+                </article>
+                <article class="service-card">
+                    <img src="services%20images/Reliable%20transportation%20services.jpg" alt="Roofing materials being transported by truck">
+                    <div class="service-card-body"><h3>Reliable Transportation Services</h3><p>We deliver roofing sheets, tiles, and accessories safely and on time across Ghana. Orders are handled with care, loaded securely, and transported through flexible delivery or customer pickup options.</p></div>
+                </article>
+            </div>
+
+            <div class="service-videos" aria-label="Central Roofing service videos">
+                <div class="service-videos-heading">
+                    <p class="section-kicker">Watch Our Work</p>
+                    <h2>Roofing in action</h2>
                 </div>
-                <div class="service-card">
-                    <h3>Commercial Roofing</h3>
-                    <p>Large-scale structural roofing solutions built for warehouses, offices, and commercial properties.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Waterproofing & Repairs</h3>
-                    <p>Advanced leak detection and sealing to protect your building from severe water damage.</p>
+                <div class="service-video-grid">
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="qGCnYQjQhq8" title="Central Roofing service video 1" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="7UHP1nL3p_k" title="Central Roofing service video 2" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="z-tjHciuO_U" title="Central Roofing service video 3" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="q2ONXhM3Jac" title="Central Roofing service video 4" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="RF3R8DL_GfQ" title="Central Roofing service video 5" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="9ERWv5nxRZk" title="Central Roofing service video 6" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -96,12 +182,49 @@
                     <p>Tema</p>
                 </div>
             </div>
+
+            <div class="service-videos project-videos" aria-label="Central Roofing project videos">
+                <div class="service-videos-heading">
+                    <p class="section-kicker">Project Videos</p>
+                    <h2>See our projects in action</h2>
+                </div>
+                <div class="service-video-grid">
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="qGCnYQjQhq8" title="Central Roofing project video 1" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="7UHP1nL3p_k" title="Central Roofing project video 2" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="z-tjHciuO_U" title="Central Roofing project video 3" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="q2ONXhM3Jac" title="Central Roofing project video 4" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="RF3R8DL_GfQ" title="Central Roofing project video 5" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="service-video-card">
+                        <iframe data-youtube-id="9ERWv5nxRZk" title="Central Roofing project video 6" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- 5. Contact Us Section -->
         <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
             <p>Service areas: Accra, Kumasi, Tema, and surrounding regions.</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=GF5H%2BFCC%20Obutu%2C%20Ghana&output=embed"
+                    title="Map showing GF5H+FCC Obutu, Ghana"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=GF5H%2BFCC%20Obutu%2C%20Ghana" target="_blank" rel="noopener noreferrer">Open location in Google Maps</a>
             <form class="contact-form">
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -119,12 +242,280 @@
                 <p class="demo-note">*Note: This contact form is a demo.</p>
             </form>
         </section>
+        <!-- 6. Privacy Policy Section -->
+        <section id="privacy" class="privacy-section">
+            <div class="privacy-content">
+                <p class="section-kicker">Privacy Policy</p>
+                <h2>Your privacy matters to us</h2>
+                <p>At Central Roofing Ghana, your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website, contact us, or use our services.</p>
+
+                <h3>1. Information We Collect</h3>
+                <p>We may collect the following types of information when you interact with us:</p>
+                <ul>
+                    <li>Personal details: Name, phone number, email address, and physical address.</li>
+                    <li>Transaction details: Orders, invoices, and payments.</li>
+                    <li>Website usage data: Pages visited, device information, and browser type.</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <p>We use your information to:</p>
+                <ul>
+                    <li>Provide roofing products and services.</li>
+                    <li>Respond to inquiries and send quotations.</li>
+                    <li>Process orders, payments, and deliveries.</li>
+                    <li>Improve our services and website.</li>
+                    <li>Send updates, offers, and promotions with your consent.</li>
+                </ul>
+
+                <h3>3. Sharing of Information</h3>
+                <p>We do not sell, rent, or trade your personal information. We may share your data only with:</p>
+                <ul>
+                    <li>Trusted service providers, such as delivery partners and payment processors.</li>
+                    <li>Authorities where required by law or legal process.</li>
+                </ul>
+
+                <h3>4. Data Protection</h3>
+                <p>We take appropriate measures to safeguard your personal information, including secure storage and limited access by authorized personnel only.</p>
+
+                <h3>5. Cookies &amp; Tracking</h3>
+                <p>Our website may use cookies to enhance your browsing experience. You can manage or disable cookies in your browser settings.</p>
+
+                <h3>6. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access, update, or delete your personal data.</li>
+                    <li>Opt out of marketing communications.</li>
+                    <li>Request clarification on how your data is used.</li>
+                </ul>
+
+                <h3>7. Contact Us</h3>
+                <p>If you have questions about this Privacy Policy or how your data is handled, please contact us:</p>
+                <ul class="privacy-contact">
+                    <li>Email: <a href="mailto:sales@centralroofinggh.co">sales@centralroofinggh.co</a></li>
+                    <li>Website: <a href="https://linktr.ee/centralroofingghana" target="_blank" rel="noopener noreferrer">linktr.ee/centralroofingghana</a></li>
+                    <li>Head Office: GF5H+F9H Obutu, Awutu Breku, Central Region, Ghana</li>
+                </ul>
+
+                <p class="privacy-closing">At Central Roofing, we are committed to protecting your privacy while providing roofing solutions you can trust.</p>
+            </div>
+        </section>
+
+        <!-- 7. Policies Section -->
+        <section id="policies" class="policies-section">
+            <div class="policies-content">
+                <p class="section-kicker">Customer Policies</p>
+                <h2>Clear policies for dependable service</h2>
+                <p>At Central Roofing, we believe in transparency, integrity, and customer satisfaction. These policies guide our relationship with clients and ensure smooth service delivery.</p>
+
+                <h3>1. Quality Assurance Policy</h3>
+                <ul>
+                    <li>We deliver roofing materials that meet the exact specifications, including thickness, profile, and color, agreed in your order.</li>
+                    <li>All installations are supervised by experienced professionals to maintain the highest safety and quality standards.</li>
+                    <li>Materials are sourced from trusted manufacturers to guarantee durability.</li>
+                </ul>
+
+                <h3>2. Order &amp; Payment Policy</h3>
+                <ul>
+                    <li>Orders are processed only upon confirmation of payment or an agreed deposit.</li>
+                    <li>All invoices are issued through our official system and must be settled via approved payment channels.</li>
+                    <li>Any outstanding balance must be cleared before final delivery or installation.</li>
+                </ul>
+
+                <h3>3. Delivery &amp; Logistics Policy</h3>
+                <ul>
+                    <li>Central Roofing provides nationwide delivery at agreed rates.</li>
+                    <li>Delivery timelines are communicated at the time of purchase and may vary depending on distance and availability.</li>
+                    <li>Customers are encouraged to inspect materials upon delivery.</li>
+                </ul>
+
+                <h3>4. Returns &amp; Exchange Policy</h3>
+                <ul>
+                    <li>Materials supplied according to the agreed specification are non-refundable.</li>
+                    <li>Exchanges may be allowed only in cases of factory defects verified at the point of delivery.</li>
+                    <li>Additional transportation costs for exchanges are borne by the customer.</li>
+                </ul>
+
+                <h3>5. Installation &amp; Accessories Policy</h3>
+                <ul>
+                    <li>Installation services are optional and provided at a separate cost.</li>
+                    <li>Accessories such as droppers, ridges, and gutters are available upon request and charged separately.</li>
+                    <li>Customers are advised to confirm accessory requirements before purchase.</li>
+                </ul>
+
+                <h3>6. Customer Service Policy</h3>
+                <ul>
+                    <li>We are committed to respectful, professional, and timely communication with all customers.</li>
+                    <li>Complaints or disputes should be reported via <a href="mailto:sales@centralroofinggh.co">sales@centralroofinggh.co</a> or at our Head Office.</li>
+                    <li>All concerns are addressed fairly in line with our service standards.</li>
+                </ul>
+
+                <h3>7. Privacy &amp; Data Policy</h3>
+                <ul>
+                    <li>Customer details are kept confidential and used only for service delivery purposes.</li>
+                    <li>We do not share or sell client information to third parties.</li>
+                    <li>See our <a href="#privacy">full Privacy Policy</a> for more details.</li>
+                </ul>
+
+                <div class="policies-contact">
+                    <p>Email: <a href="mailto:sales@centralroofinggh.co">sales@centralroofinggh.co</a></p>
+                    <p>Explore more: <a href="https://linktr.ee/centralroofingghana" target="_blank" rel="noopener noreferrer">linktr.ee/centralroofingghana</a></p>
+                    <p>Head Office: GF5H+F9H Obutu, Awutu Breku, Central Region, Ghana</p>
+                </div>
+
+                <p class="policies-closing">At Central Roofing Ghana, we protect your investment by keeping our promises — every time.</p>
+            </div>
+        </section>
+
+        <!-- 8. Terms & Conditions Section -->
+        <section id="terms" class="terms-section">
+            <div class="terms-content">
+                <p class="section-kicker">Terms &amp; Conditions</p>
+                <h2>Terms for using our website and services</h2>
+                <p>Welcome to Central Roofing Ghana’s website. By accessing or using our website, products, or services, you agree to be bound by the following Terms &amp; Conditions. Please read them carefully.</p>
+
+                <h3>1. Use of Our Website</h3>
+                <ul>
+                    <li>You may browse our website for information, quotations, and service requests.</li>
+                    <li>You agree not to misuse our website for fraudulent activities or unauthorized purposes.</li>
+                </ul>
+
+                <h3>2. Quotations &amp; Orders</h3>
+                <ul>
+                    <li>All quotations are valid for a limited time, as indicated on the invoice.</li>
+                    <li>Orders are processed only upon confirmation of payment or an agreed deposit.</li>
+                    <li>Customers are responsible for providing accurate measurements and specifications for roofing materials.</li>
+                </ul>
+
+                <h3>3. Payments</h3>
+                <ul>
+                    <li>Payments must be made via approved channels indicated on the invoice.</li>
+                    <li>Central Roofing does not accept responsibility for payments made to unauthorized persons or accounts.</li>
+                    <li>Full payment, or the applicable balance, must be cleared before delivery or installation.</li>
+                </ul>
+
+                <h3>4. Delivery &amp; Installation</h3>
+                <ul>
+                    <li>Delivery timelines are communicated during order confirmation but may be affected by location, availability, or unforeseen circumstances.</li>
+                    <li>Customers are required to inspect all materials upon delivery.</li>
+                    <li>Installation services are optional and provided under separate agreements.</li>
+                </ul>
+
+                <h3>5. Accessories &amp; Add-Ons</h3>
+                <ul>
+                    <li>Accessories such as droppers, ridges, and gutters are supplied upon request and at additional cost.</li>
+                    <li>Customers are encouraged to confirm accessory needs before finalizing an order.</li>
+                </ul>
+
+                <h3>6. Returns &amp; Refunds</h3>
+                <ul>
+                    <li>Roofing materials supplied according to agreed specifications are non-refundable.</li>
+                    <li>Returns or exchanges are accepted only in cases of verified factory defects reported immediately upon delivery.</li>
+                    <li>Transportation or additional costs for returns are the responsibility of the customer.</li>
+                </ul>
+
+                <h3>7. Warranties &amp; Liability</h3>
+                <p>Central Roofing guarantees the authenticity and quality of materials supplied.</p>
+                <p>We are not liable for damages caused by:</p>
+                <ul>
+                    <li>Improper installation by third parties.</li>
+                    <li>Misuse, negligence, or lack of maintenance.</li>
+                    <li>Natural disasters or accidents beyond our control.</li>
+                </ul>
+
+                <h3>8. Customer Responsibilities</h3>
+                <ul>
+                    <li>Provide accurate site details for delivery and installation.</li>
+                    <li>Ensure access to delivery sites is safe and possible for vehicles.</li>
+                    <li>Maintain proper care of roofing materials after delivery.</li>
+                </ul>
+
+                <h3>9. Privacy &amp; Data Protection</h3>
+                <ul>
+                    <li>By using our website or services, you agree to our <a href="#privacy">Privacy Policy</a>.</li>
+                    <li>Customer information is kept confidential and used solely for service purposes.</li>
+                </ul>
+
+                <h3>10. Governing Law</h3>
+                <ul>
+                    <li>These Terms &amp; Conditions are governed by the laws of the Republic of Ghana.</li>
+                    <li>Any disputes shall be resolved through negotiation or in the appropriate Ghanaian courts.</li>
+                </ul>
+
+                <div class="terms-contact">
+                    <p>Email: <a href="mailto:sales@centralroofinggh.co">sales@centralroofinggh.co</a></p>
+                    <p>Explore more: <a href="https://linktr.ee/centralroofingghana" target="_blank" rel="noopener noreferrer">linktr.ee/centralroofingghana</a></p>
+                    <p>Head Office: GF5H+F9H Obutu, Awutu Breku, Central Region, Ghana</p>
+                </div>
+
+                <p class="terms-closing">By trading with Central Roofing Ghana, you acknowledge and accept these Terms &amp; Conditions.</p>
+            </div>
+        </section>
     </main>
 
-    <!-- 6. Footer -->
-    <footer>
-        <p>&copy; 2026 Central Roofing - Ghana. All rights reserved.</p>
-        <p>Email: sales@centralroofinggh.co | Phone: +233 544 966 829</p>
+    <!-- 9. Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#policies">Policies</a></li>
+                    <li><a href="#terms">Terms &amp; Conditions</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#contact">Need Help?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Projects &amp; Partners</h3>
+                <ul class="footer-links">
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="mailto:sales@centralroofinggh.co">sales@centralroofinggh.co</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>About Developer</h3>
+                <p>Developed by <a href="https://www.linkedin.com/in/isaac-oboh-yamoah/" target="_blank" rel="noopener noreferrer">Isaac Oboh Yamoah</a></p>
+
+                <div class="social-links" aria-label="Social media links">
+                    <a href="https://www.linkedin.com/company/central-roofing-ghana" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="SVG%20social%20media%20button%20images/linkedin%20logo.jpg" alt="LinkedIn">
+                    </a>
+                    <a href="https://web.facebook.com/centralroofingghana" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src="SVG%20social%20media%20button%20images/Facebook%20Logo%20-%20Social%20Media%20Icon.jpg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/centralroofingghana" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="SVG%20social%20media%20button%20images/Instagram%203D%20Render%20Icon.jpg" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@centralroofingghana" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <img src="SVG%20social%20media%20button%20images/Tik%20tok%20logo.jpg" alt="TikTok">
+                    </a>
+                    <a href="https://medium.com/@centralroofingghana" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                        <img src="SVG%20social%20media%20button%20images/Medium%20icon.jpg" alt="Medium">
+                    </a>
+                    <a href="https://www.youtube.com/@CentralRoofing-Ghana" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <img src="SVG%20social%20media%20button%20images/youtube%20logo.jpg" alt="YouTube">
+                    </a>
+                    <a href="https://www.threads.net/@centralroofingghana" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+                        <img src="SVG%20social%20media%20button%20images/threads%20logo.jpg" alt="Threads">
+                    </a>
+                    <a href="https://twitter.com/centralroofgh" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+                        <img src="SVG%20social%20media%20button%20images/X%20logo.jpg" alt="X">
+                    </a>
+                    <a href="http://wa.me/544966829" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <img src="SVG%20social%20media%20button%20images/WhatsApp%20logo,%203D.jpg" alt="WhatsApp">
+                    </a>
+                </div>
+
+                <p class="copyright">&copy; 2026 All rights reserved.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Central Roofing - Your One-Stop Roofing Hub!</p>
+        </div>
     </footer>
 
     <script src="script.js" defer></script>
